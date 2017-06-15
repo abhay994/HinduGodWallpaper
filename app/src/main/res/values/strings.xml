@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bhagwan Wallpaper</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="transition_string">hellwo</string>
+    <string name="connection">CHECK INTERNET CONNECTION</string>
+    <string name="retry">Retry</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-4855672100917117/2877707381</string>
+</resources>

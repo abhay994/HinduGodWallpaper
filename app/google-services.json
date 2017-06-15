@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "593054340651",
+    "firebase_url": "https://hindugodwallpaper-8df65.firebaseio.com",
+    "project_id": "hindugodwallpaper-8df65",
+    "storage_bucket": "hindugodwallpaper-8df65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593054340651:android:caf472ee8fbda601",
+        "android_client_info": {
+          "package_name": "com.god.abhay.hindugodwallpaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593054340651-kfq7snlq1ifjg3m8kc3samr9iskiv869.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.god.abhay.hindugodwallpaper",
+            "certificate_hash": "098c9e631ba5745b89e0057fa0e4ee1c3eb03915"
+          }
+        },
+        {
+          "client_id": "593054340651-mv73q4s2q5daeccashd2l6s2qt21n322.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.god.abhay.hindugodwallpaper",
+            "certificate_hash": "4c2de15166915bb6000da60c2c64127fdf457957"
+          }
+        },
+        {
+          "client_id": "593054340651-6a3sqtok8sqicjk8joenp18vvkru27rj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbMt73TQurXV93NtjS2zzj0QMXOD8p9O4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593054340651-6a3sqtok8sqicjk8joenp18vvkru27rj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

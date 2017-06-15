@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_hindugodwallpaper" default="compile.module.hindugodwallpaper">
+  <dirname property="module.hindugodwallpaper.basedir" file="${ant.file.module_hindugodwallpaper}"/>
+  
+  <property name="module.jdk.home.hindugodwallpaper" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.hindugodwallpaper" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.hindugodwallpaper" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.hindugodwallpaper" value="-encoding UTF-8 -source 1.7 -target 1.7 ${compiler.args}"/>
+  
+  <property name="hindugodwallpaper.output.dir" value="${module.hindugodwallpaper.basedir}/build/classes/production/HinduGodWallpaper"/>
+  <property name="hindugodwallpaper.testoutput.dir" value="${module.hindugodwallpaper.basedir}/build/classes/test/HinduGodWallpaper"/>
+  
+  <path id="hindugodwallpaper.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="hindugodwallpaper.module.production.classpath">
+    <path refid="${module.jdk.classpath.hindugodwallpaper}"/>
+  </path>
+  
+  <path id="hindugodwallpaper.runtime.production.module.classpath">
+    <pathelement location="${hindugodwallpaper.output.dir}"/>
+  </path>
+  
+  <path id="hindugodwallpaper.module.classpath">
+    <path refid="${module.jdk.classpath.hindugodwallpaper}"/>
+    <pathelement location="${hindugodwallpaper.output.dir}"/>
+  </path>
+  
+  <path id="hindugodwallpaper.runtime.module.classpath">
+    <pathelement location="${hindugodwallpaper.testoutput.dir}"/>
+    <pathelement location="${hindugodwallpaper.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.hindugodwallpaper">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.hindugodwallpaper">
+    <patternset refid="excluded.from.module.hindugodwallpaper"/>
+  </patternset>
+  
+  
+  <target name="compile.module.hindugodwallpaper" depends="compile.module.hindugodwallpaper.production,compile.module.hindugodwallpaper.tests" description="Compile module HinduGodWallpaper"/>
+  
+  <target name="compile.module.hindugodwallpaper.production" depends="register.custom.compilers" description="Compile module HinduGodWallpaper; production classes"/>
+  
+  <target name="compile.module.hindugodwallpaper.tests" depends="register.custom.compilers,compile.module.hindugodwallpaper.production" description="compile module HinduGodWallpaper; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.hindugodwallpaper" description="cleanup module">
+    <delete dir="${hindugodwallpaper.output.dir}"/>
+    <delete dir="${hindugodwallpaper.testoutput.dir}"/>
+  </target>
+</project>
